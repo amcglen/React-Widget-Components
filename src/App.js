@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Accordion from './Components/Accordion';
 import Search from './Components/Search';
 import Dropdown from './Components/Dropdown';
+import Translate from './Components/Translate';
 
   const items =[
     {title: "What is React?", content: "React is a front-end JS framework."},
@@ -24,11 +25,13 @@ const [selected, setSelected] = useState(options[0]);
     <div className="ui container">
       {/* <Accordion items={items} /> */}
       {/* <Search /> */}
-      <Dropdown 
+      {/* <Dropdown 
         options={options} 
         selected={selected} 
         onSelectedChange={setSelected} 
-      />
+      /> */}
+      <Translate />
+
     </div>
     
   );
